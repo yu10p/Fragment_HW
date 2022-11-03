@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
+//繼承於Fragment類別
 class ThirdFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +21,13 @@ class ThirdFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.e("ThirdFragment","onCreateView")
+        //定義Fragment的畫面
         return inflater.inflate(R.layout.fragment_third, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        //主程式
         Log.e("ThirdFragment","onActivityCreated")
     }
 
